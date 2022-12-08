@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    position: relative;
+}
+
+header{
+    background: black url(assets/header.png) center center/cover fixed;
+    height: 80vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.star,.wars{
+    width: 50%;
+    position: relative;
+
+}
+
+.starWarsHeader{
+    width: 100%;
+    display: flex;
+    gap: 5%;
+    
+}
+.kylo{
+    width: 60%;
+    margin-bottom: auto;
+    position: absolute;
+    top: 0;
+    right: 28%;
+    z-index: 2;
+    
+
+}
+
+/* Botão embaixo da LOGO "CRIE SUA LEGIÃO" */
+.legiao{
+    position: absolute;
+    width: 150px;
+    height: 151px;
+    bottom: 50px;
+    right: 150px;
+}
+.legiao p, .legiao span{
+    text-transform: uppercase;
+}
+
+.legiao .legion1{
+    font-weight: 400;
+}
+.legion2{
+    font-weight: bolder;
+}
+.inside{
+    font-size: small;
+}
+
+header button {
+    height: 17px;
+    width: 17px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: rgb(167, 161, 161);
+    font-weight: bold;
+    transition: .1s;
+}
+header button:hover {
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    transition: .1s;
+}
+
+/* FIM do "CRIE SUA LEGIÃO" */
+
+/* COMEÇO DA MAIN */
+main {
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    background: url(assets/main-backg.png) no-repeat;
+    background-size: contain;
+    float: left;
+}
+        /* CARD "COMECE A JOGAR" */
+    .cardVermelho {
+        background: url(assets/strom-red.png) top center/contain;
+        margin-left: 200px;
+        width: 274px;
+        height: 401px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: -50px;
+        padding: 30px;
+    }
+        .cardVermelho h1 {
+            width: 70%;
+            color: white;
+        }
+
+        .cardVermelho p {
+            color: white;
+            font-size: .9em;
+            font-weight: 250;
+            margin: 50px auto;
+        }
+        .cardVermelho span {
+            color: rgba(255, 255, 255, 0.589);
+            font-size: .5em;
+            font-weight: 100;
+            margin: 10px -170px 0 0;
+        }
+        .cardVermelho button{
+            padding: 10px;
+            border: 1px solid white;
+            background: transparent;
+            border-radius: 5px;
+            color: white;
+        }
+        
+        .cardVermelho button:hover{
+            color: #B9260B;
+            background-color: white;
+            transition: .5s;
+            cursor: pointer;
+        }
+    
+        .mainPrimeiro{
+            border: 1px solid red;
+            display: flex;
+            width: 99vw;
+            justify-content: space-between;
+        }
+        .mainSegundo{
+
+        }
+        .mainSegundo img{
+            width: 25vw;
+        }
+        
+    
+        
