@@ -1,157 +1,316 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+body{
+  background-color: #2D2D2D;
 }
 
-.container {
-    position: relative;
+header {
+  background: black url(assets/header.png) center center/cover fixed;
+  height: 80vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.star,
+.wars {
+  width: 50%;
+  position: relative;
 }
 
-header{
-    background: black url(assets/header.png) center center/cover fixed;
-    height: 80vh;
-    width: 100%;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+.starWarsHeader {
+  width: 100%;
+  display: flex;
+  gap: 5%;
 }
-.star,.wars{
-    width: 50%;
-    position: relative;
-
-}
-
-.starWarsHeader{
-    width: 100%;
-    display: flex;
-    gap: 5%;
-    
-}
-.kylo{
-    width: 60%;
-    margin-bottom: auto;
-    position: absolute;
-    top: 0;
-    right: 28%;
-    z-index: 2;
-    
-
+.kylo {
+  width: 60%;
+  margin-bottom: auto;
+  position: absolute;
+  top: 0;
+  right: 28%;
+  z-index: 2;
 }
 
 /* Botão embaixo da LOGO "CRIE SUA LEGIÃO" */
-.legiao{
-    position: absolute;
-    width: 150px;
-    height: 151px;
-    bottom: 50px;
-    right: 150px;
+.legiao {
+  position: absolute;
+  width: 150px;
+  height: 151px;
+  bottom: 50px;
+  right: 150px;
 }
-.legiao p, .legiao span{
-    text-transform: uppercase;
+.legiao p,
+.legiao span {
+  text-transform: uppercase;
 }
 
-.legiao .legion1{
-    font-weight: 400;
+.legiao .legion1 {
+  font-weight: 400;
 }
-.legion2{
-    font-weight: bolder;
+.legion2 {
+  font-weight: bolder;
 }
-.inside{
-    font-size: small;
+.inside {
+  font-size: small;
 }
 
 header button {
-    height: 17px;
-    width: 17px;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    background-color: rgb(167, 161, 161);
-    font-weight: bold;
-    transition: .1s;
+  height: 17px;
+  width: 17px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: rgb(167, 161, 161);
+  font-weight: bold;
+  transition: 0.1s;
 }
 header button:hover {
-    color: white;
-    background-color: black;
-    cursor: pointer;
-    transition: .1s;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+  transition: 0.1s;
 }
 
 /* FIM do "CRIE SUA LEGIÃO" */
 
 /* COMEÇO DA MAIN */
 main {
-    height: 100%;
-    position: absolute;
-    z-index: 2;
-    background: url(assets/main-backg.png) no-repeat;
-    background-size: contain;
-    float: left;
+  height: 150vh;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  background: rgb(255, 255, 255) url(assets/main-backg.png) no-repeat bottom left/contain;
+  float: left;
 }
-        /* CARD "COMECE A JOGAR" */
-    .cardVermelho {
-        background: url(assets/strom-red.png) top center/contain;
-        margin-left: 200px;
-        width: 274px;
-        height: 401px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-top: -50px;
-        padding: 30px;
-    }
-        .cardVermelho h1 {
-            width: 70%;
-            color: white;
-        }
+/* CARD "COMECE A JOGAR" */
+.cardVermelho {
+  background: url(assets/strom-red.png) top center/contain;
+  width: 274px;
+  height: 401px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -50px;
+  padding: 30px;
+}
+.cardVermelho h1 {
+  width: 70%;
+  color: white;
+}
 
-        .cardVermelho p {
-            color: white;
-            font-size: .9em;
-            font-weight: 250;
-            margin: 50px auto;
-        }
-        .cardVermelho span {
-            color: rgba(255, 255, 255, 0.589);
-            font-size: .5em;
-            font-weight: 100;
-            margin: 10px -170px 0 0;
-        }
-        .cardVermelho button{
-            padding: 10px;
-            border: 1px solid white;
-            background: transparent;
-            border-radius: 5px;
-            color: white;
-        }
-        
-        .cardVermelho button:hover{
-            color: #B9260B;
-            background-color: white;
-            transition: .5s;
-            cursor: pointer;
-        }
-    
-        .mainPrimeiro{
-            border: 1px solid red;
-            display: flex;
-            width: 99vw;
-            justify-content: space-between;
-        }
-        .mainSegundo{
+.cardVermelho p {
+  color: white;
+  font-size: 0.9em;
+  font-weight: 250;
+  margin: 50px auto;
+}
+.cardVermelho span {
+  color: rgba(255, 255, 255, 0.589);
+  font-size: 0.5em;
+  font-weight: 100;
+  margin: 10px -170px 0 0;
+}
+.cardVermelho button {
+  padding: 10px;
+  border: 1px solid white;
+  background: transparent;
+  border-radius: 5px;
+  color: white;
+}
 
-        }
-        .mainSegundo img{
-            width: 25vw;
-        }
-        
-    
-        
+.cardVermelho button:hover {
+  color: #b9260b;
+  background-color: white;
+  transition: 0.5s;
+  cursor: pointer;
+}
+/* COMEÇO MAIN */
+.mainPrimeiro {
+  display: flex;
+  width: 76vw;
+  margin: auto;
+  padding-bottom: 150px;
+  justify-content: space-between;
+  background: url(assets/Linha\ 2.png) no-repeat bottom center;
+}
+.sobreJogo {
+  display: flex;
+  gap: 25px;
+  width: 55%;
+  align-items: flex-end;
+}
+.sobreJogo h4 {
+  text-transform: uppercase;
+  font-weight: 520;
+  height: 40px;
+  text-align: right;
+  font-size: 1.3rem;
+  background: url(assets/Linha\ 8.png) no-repeat bottom right;
+}
+.sobreJogo p {
+  text-align: right;
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+.sobreJogo .p1 {
+  text-align: right;
+  margin-top: 0;
+}
+.sobreJogo img {
+  width: 20vw;
+  height: 25vh;
+}
+
+.mainSegundo {
+  width: 75vw;
+  margin: auto;
+  background: url(assets/lord\ sifh\ 2.png) no-repeat center left/contain;
+}
+
+.estruturaContainer {
+  background: url(assets/rey.png) no-repeat center right/contain;
+  width: 70vw;
+  height: 90vh;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+.estruturaJogo {
+  width: 40%;
+  margin: auto;
+  text-align: end;
+}
+.textoSpan {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.textoJogo {
+  font-weight: 900;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+}
+.estruturaJogo ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+}
+.estruturaJogo li {
+  font-size: 1.5rem;
+  margin-top: 15px;
+  padding: 2px;
+  font-weight: 500;
+}
+.estruturaJogo li:hover {
+  color: white;
+  background-color: #d74430;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.atributos{
+  width: 80.8vw;
+  padding-top: 50px;
+  margin: auto;
+}
+.atributos h2{
+  color: white;
+  text-transform: uppercase;
+  font-size: 2.3rem;
+  font-weight: 900;
+}
+
+.galeria{
+  display: flex;
+  flex-direction: row;
+  margin: 55px 0;
+
+}
+.picturePequena{
+  width: 55%;
+  height: 50%;
+  flex-wrap: wrap;
+  display: flex;
+  position: relative;
+}
+.pictureGrande{
+  position: relative;
+}
+.pictureGrande img {
+  width: 40vw;
+
+}
+
+.picturePequena img{
+  width: 19.85vw;
+}
+
+.picture2{
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+}
+.picture2 div{
+  width: 21vw;
+  height: 28vh;
+  top: -15px;
+  opacity: 0;
+  left: -9.5px;
+  padding: 30px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  background-color: #b9260b;
+  margin: -5px;
+}
+.picture2 div:hover{
+  opacity: .4;
+  transition: .3s;
+}
+.picture2 h3{
+  color: white;
+}
+.picture2 p{
+  font-size: .7rem;
+  color: white;
+}
+.picture2 button{
+  color: white;
+  background-color: transparent;
+  padding: 5px 10px;
+  border: 3px solid white;
+}
+.picture2 button:hover {
+  color: #b9260b;
+  background-color: white;
+  cursor: pointer;
+  transition: .2s;
+}
+.hierarquia{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 30px;
+}
+.hierarquia img {
+  width: 100%;
+}
+.hierarquia p {
+  font-size: .85rem;
+  width: 50%;
+  color: white;
+  text-align: end;
+  font-weight: 100;
+  display: inline;
+  align-self: flex-end;
+}
