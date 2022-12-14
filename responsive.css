@@ -9,7 +9,7 @@ body{
   background-color: #2D2D2D;
 }
 main{
-    width: 140%;
+    width: 100%;
     height: 100%;
 }
 .container{
@@ -29,7 +29,7 @@ header {
 }
 .star,
 .wars {
-  width: 50%;
+  width: 47%;
   position: relative;
 }
 
@@ -50,8 +50,8 @@ header {
 /* Botão embaixo da LOGO "CRIE SUA LEGIÃO" */
 .legiao {
   position: absolute;
-  width: 150px;
-  height: 151px;
+  width: 100px;
+  height: 100px;
   top: 116px;
   left:260px;
 }
@@ -94,7 +94,6 @@ header button:hover {
 .main {
   height: 100%;
   width: 100%;
-  border: 1px solid red;
   background: rgb(255, 255, 255) url(assets/main-backg.png) no-repeat bottom left/contain;
 }
 /* CARD "COMECE A JOGAR" */
@@ -235,9 +234,8 @@ header button:hover {
   transition: 0.5s;
 }
 .atributos{
-  width: 80.8vw;
+  width: 100vw;
   padding-top: 50px;
-  margin: auto
 }
 .atributos h2{
   color: white;
@@ -259,7 +257,7 @@ header button:hover {
   display: flex;
 }
 .pictureGrande{
-    width: 150%;
+    width: 100%;
 }
 .pictureGrande img {
   width: 100%;
@@ -273,8 +271,8 @@ header button:hover {
 .picture2{
   position: absolute;
   display: flex;
-  width: 122%;
-  height: 164%;
+  width: 100%;
+  height: 133%;
   flex-wrap: wrap;
 }
 .picture2 div{
@@ -312,7 +310,7 @@ header button:hover {
 }
 .hierarquia{
 display: flex;
-width: 150%;
+width: 100%;
 flex-direction: column;
 align-items: flex-start;
 gap: 30px;
@@ -344,6 +342,7 @@ gap: 30px;
 .download .divOne{
   height: 50%;
   display: flex;
+  width: 100%;
   align-items: center;
   justify-content: center;
 }
@@ -356,6 +355,7 @@ font-size: 2rem;
 .download .divTwo{
   background-color: white;
   height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -415,18 +415,27 @@ font-size: 2rem;
 
 /* Footer */
 footer{
-height: 300vh;
+height: 200vh;
+width: 100%;
+margin-top: 400px;
 display: flex;
 flex-direction: column;
-border: 1px solid red;
+background-color: white
 }
 footer .footerOne{
   background-color: #FF5A56;
   width: 100%;
-  height: 50%;
-  border: 1px solid white;
-  height: 100%;
+  height: 90%;
+  display: flex;
+  padding: 25px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   color: white;
+}
+footer h2 {
+  font-size: 3.2rem;
+  margin-bottom: 25px;
 }
 footer .footerOne p{
   width: 100%;
@@ -434,37 +443,39 @@ footer .footerOne p{
 footer .footerTwo{
   background-color: white;
   width: 100%;
-  height: 50%;
-  bottom: 0;
+  height: 60%;
   display: flex;
-  align-items: flex-end;
-  border: 1px solid red;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  
 }
 .botoes{
-  width: 30%;
+  width: 100%;
   display: flex;
+  gap: 10px;
+  margin-top: 25px;
 
 }
-.botoes a img{
-  width: 100%;
+.botoes img{
+  width: 50%;
 }
 .footerInside {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
   text-align: left;
   justify-content: center;
-  width: 90%;
-  height: 50%;
+  width: 100%;
+  height: 40%;
   background: url(assets/linha10.png) bottom center no-repeat;
 }
 .footerInsideBottom {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  width: 90%;
+  justify-content: space-around;
+  width: 100%;
   height: 50%;
 }
 .footerInsideBottom p{
@@ -473,12 +484,18 @@ footer .footerTwo{
 }
 
 .footerTwo img{
-  width: 129%;
-  bottom: 300px;
+  width: 100%;
+  position: absolute;
+  bottom: 170px;
 }
+
 .footerTwo p{
   font-size: .7rem;
-  width: 60%;
-  margin: 0 auto;
+  width: 30%;
+  height: 100%;
+  position: absolute;
+  top: 350px;
+  left: 50px;
+  
 }
 }

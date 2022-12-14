@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 
-@media (min-width:1080px) {
+@media (min-width:500px) {
   *{
     margin: 0;
     padding: 0;
@@ -153,7 +153,6 @@
     gap: 25px;
     width: 100%;
     justify-content: flex-end;
-    border: 1px solid red;
     margin-top: 50px;
   }
   .sobreJogoDiv{
@@ -408,7 +407,6 @@
   footer{
     height: 700px;
     display: flex;
-    border: 1px solid red;
   }
   footer .footerOne{
     background-color: #FF5A56;
@@ -428,15 +426,19 @@
     align-items: flex-end;
     position: relative;
   
-    border: 1px solid red;
   }
   .botoes{
-    width: 30%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
     display: flex;
   
   }
-  .botoes a img{
-    width: 100%;
+  .botoes img{
+    width: 25%;
+  }
+  footer h2{
+    font-size: 2.5rem;
   }
   .footerInside {
     display: flex;
